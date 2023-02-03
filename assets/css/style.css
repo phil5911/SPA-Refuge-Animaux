@@ -70,6 +70,7 @@ ul, ol {
     align-items: center;
     background-color: #eb9118;
     column-gap: 40px;
+    height: 56px;
 }
     
 .banniere_image {
@@ -123,35 +124,100 @@ ul, ol {
 
 .button {
     display: inline-block;
-    color: red;
-    margin-top: 50px;
+    color: #222;
+    margin-top: 25px;
     padding-left: 15%;
+    border-radius: 32px;
+    padding: 15px 30px;
+    margin-left: 85px;
+    font-weight: 600;
 }
+    
+.button-white {
+    background-color: #fff;
+    transition: background-color 0.25s;
+}
+
+.button-white:hover {
+    background-color: rgba(21, 10, 1, 0.998);
+}
+
+/* START : Stylisation du bloc adoption */
+
+.bloc-adoption {
+    display: flex;
+    margin-bottom: 100px;
+    background-color:#f6f4f3;
+}
+    
+.bloc-adoption_container-texts,
+.bloc-adoption_image {
+    width: 60%;
+}
+
+.bloc-adoption_image {
+    width: 950px;
+    height: 650px;
+    margin-top: 50px;
+}
+
+.bloc-adoption_title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.bloc-adoption_container-link{
+    position: relative;
+    margin-top: 70px;
+}
+
+.bloc-adoption_link {
+    padding: 25px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+    
+
+.bloc-adoption_link--orange {
+    background-color: var(--color-orange);
+    color: #ffffff;
+}
+
+.bloc-adoption_description {   
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px; 
+    font-weight: 400;
+    margin-top: 20px;
+}
+    
+.bloc-adoption:nth-child(odd) {
+    flex-direction: row-reverse;
+}   
+
+.bloc-adoption:nth-child(even) .bloc-adoption_container-texts {
+    padding-right: 3%;
+    
+}
+    
+.bloc-adoption:nth-child(odd) .bloc-adoption_container-texts {
+    padding-left: 3%;
+}
+
+    
+    
+
+
+    
+
+
  
     
     
 
     
     
-/*.cover_nav {
-    position: absolute;
-    top:50%;
-    right: 60%;
-}
 
-.cover_container-nav {
-    position: relative;
-    padding-left: 270px;
-    margin-top: 140px;
-}    
-
-.button {
-    padding: 15px 45px;
-    border-radius: 50px;
-    font-weight: 600;
-    margin-left: 10px;
-
-}
     
 
     
