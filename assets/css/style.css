@@ -1,4 +1,6 @@
-/* Reset */
+/* 
+Reset 
+*/
 
 * {
     margin: 0;
@@ -7,57 +9,73 @@
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 ul, ol {
     list-style: none;
 }
 
+button {
+    border-width: 0;
+    background-color: transparent;
+}
+
+input {
+    border-width: 0;
+    background-color: transparent;
+}
+
+/*
+Flux
+*/
+
+.flux {
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* START : Stylisation du header */
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: #fffaf7;
-    padding-bottom: 22px;
-    padding-top: 22px;
+    padding-bottom: 20px;
+}
+
+.header__container {
+    display: flex;
+    max-width: 1280px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
 }
     
-.header_left {
-    display: flex;
-    align-items: center;
-    margin-left: 120px;
-    padding-left: 120px;
-    column-gap: 15px;
-}
-
-.header_list {
-    margin-right: 250px;
-}
-
-.list_links {
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    column-gap: 40px;
-    margin-right: 250px;
-}
-
-.logo {
+.header__logo {
     width: 72px;
-    height: 81px;
-}
-
-.menu {
-    width: 28px;
-    height: 22px;
+    height: 82px;
 }
     
-.icon-don, .icon-, .icon-adoption, .icon-maltraitance, .icon-check, .icon-check,
- .icon-user, .icon-map, .icon-coeur, .icon-search {
+.header__menu {
+    width: 28px;
+    margin-right: 300px;
+}
+
+.header__list-link {
+    display: flex;
+    column-gap: 30px;
+    margin-right: 100px;
+    padding-top: 20px;
+}
+    
+.header__link {
+    color: black;
+}
+    
+.header__icon {
     width: 17px;
     height: 22px;
 }
@@ -73,12 +91,12 @@ ul, ol {
     height: 56px;
 }
     
-.banniere_image {
+.banniere__image {
     width: 30px;
     color: #fdf3ed;
 }
 
-.banniere_title {
+.banniere__title {
     font-size: 16px;
     font-weight: 500px;
     color: #fdf3ed;
@@ -86,24 +104,20 @@ ul, ol {
 
 /* START : Stylisation de la cover */
 
-.cover {
-    
-}
-    
-.cover_image {
+.cover__image {
     position: relative;
     width:100%;
     height: 550px;
 }
 
-.cover_container-texts {
+.cover__container-texts {
     position: absolute;
     top:25%;
     right: 54%;
     color: #ffffff;
 }
 
-.cover_title {
+.cover__title {
     font-size: 58px;
     font-family: Amatic SC, sans-serif;
     font-weight: bold;
@@ -114,7 +128,7 @@ ul, ol {
     color: #fff;
 }
     
-.cover_introduction {
+.cover__introduction {
     font-size: 20px;
     font-family: Raleway, sans-serif;
     padding-left: 15%;
@@ -124,7 +138,7 @@ ul, ol {
 
 .button {
     display: inline-block;
-    color: #222;
+    color: rgba(17, 15, 15, 0.985);
     margin-top: 25px;
     padding-left: 15%;
     border-radius: 32px;
@@ -134,78 +148,399 @@ ul, ol {
 }
     
 .button-white {
-    background-color: #fff;
+    background-color:#fff;
     transition: background-color 0.25s;
 }
 
 .button-white:hover {
-    background-color: rgba(21, 10, 1, 0.998);
+    background-color: transparent;
 }
 
 /* START : Stylisation du bloc adoption */
-
-.bloc-adoption {
+    
+.bloc__adoption  {
     display: flex;
     margin-bottom: 100px;
-    background-color:#f6f4f3;
+    background-color: rgb(255, 250, 247);
 }
-    
-.bloc-adoption_container-texts,
-.bloc-adoption_image {
+
+.bloc__adoption__container-texts,
+.bloc__adoption-image {
     width: 60%;
 }
 
-.bloc-adoption_image {
+.bloc__adoption-image {
     width: 950px;
     height: 650px;
     margin-top: 50px;
 }
 
-.bloc-adoption_title {
+.bloc__adoption-title {
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
     margin-top: 50px;
 }
 
-.bloc-adoption_container-link{
+.bloc__adoption__container-link{
     position: relative;
     margin-top: 70px;
 }
 
-.bloc-adoption_link {
+.button__b {
     padding: 25px 40px;
     border-radius: 50px;
     font-weight: 600;
+    color: #fff;
+    border: solid 2px #eb651c; 
+}
+
+.button-orange {
+    background-color:#eb651c;
+    transition: background-color 0.25s;
+}
+
+.button-orange:hover {
+    background-color: #f6f4f3;
 }
     
-
-.bloc-adoption_link--orange {
-    background-color: var(--color-orange);
-    color: #ffffff;
-}
-
-.bloc-adoption_description {   
+.bloc__adoption-description {   
     font-family: 'Raleway', sans-serif;
     font-size: 18px; 
     font-weight: 400;
     margin-top: 20px;
 }
     
-.bloc-adoption:nth-child(odd) {
+.bloc__adoption:nth-child(odd) {
     flex-direction: row-reverse;
 }   
 
-.bloc-adoption:nth-child(even) .bloc-adoption_container-texts {
+.bloc__adoption:nth-child(even) .bloc__adoption__container-texts {
     padding-right: 3%;
     
 }
     
-.bloc-adoption:nth-child(odd) .bloc-adoption_container-texts {
+.bloc__adoption:nth-child(odd) .bloc__adoption__container-texts {
     padding-left: 3%;
 }
 
+/* START : Stylisation hero */
+
+.hero {
+    background-color: #fffaf7;
+    font-size: "Roboto",sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    row-gap: 20px;
+}
+
+.hero__title {
+    color: #222;
+    font-weight: 400;
+    font-size: 58px;
+    font-family: Amatic SC, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.7;
+    padding-bottom: 10px;
+}
+
+.hero__title strong {
+    color:#eb651c;
+}
+
+.hero__search {
+    background-color: #fffaf7;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.hero__field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+    
+.hero__label {
+    color: grey;
+    font-size: 14px;
+}
+
+.hero__input {
+    color: black;
+    font-size: 18px;
+    width: 300px;
+}
+
+.hero__input::placeholder {
+    opacity: 1;
+}
+
+.button--orange {
+    background-color: #eb651c;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* 450px = mobile */
+@media screen and (max-width:450px) {
+    .header__logo {
+        margin-left: 20px;
+    }
+
+    .header__menu {
+        margin-left: 10px;
+    }
+
+    .cover__introduction {
+        display: none;
+    }
+
+    .cover__title {
+        padding-bottom: 5px;
+        padding-left: 5%;
+        font-size: 40px;
+        line-height: 1.5;
+    }
+    
+    .button {
+        margin-left: 15px;
+    }
+        
+    .button-white {
+        padding: 10px 20px;
+        margin-right: 40px;
+        border-radius: 25px;
+    }
+        
+    .bloc__adoption-title {
+        font-size: 25px;
+    }
+    
+    .bloc__adoption-description {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+        
+    .bloc__adoption-image {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .button__b {
+        padding:25px 20px ;
+    }
+        
+    .hero {
+        padding-bottom: 250px;
+    }
+} 
+        
+/* 800px = tablette portrait */
+@media screen and (max-width:800px) {
+    
+    .header__link {
+        padding-right: 30px;
+    }
+    
+    .header__logo {
+        margin-left: 20px;
+    }
+
+    .header__menu {
+        margin-left: 10px;
+    }
+    
+    .banniere {
+        display: none;
+    }
+
+    .cover__container-texts {
+        position: absolute;
+        top: 25%;
+        right: 25%;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    
+    .cover__introduction {
+        display: none;
+    }
+        
+    .bloc__adoption {
+        position: relative;
+        display: block;
+        flex-direction: column;
+    }
+}
+    
+
+
+        
+
+
+
     
     
+        
+        
+
+    
+        
+
+    
+        
+    
+        
+        
+        
+        
+
+    
+
+
+        
+    
+    
+
+    
+    
+
+
+
+    
+    
+    
+
+
+        
+
+
+        
+    
+
+    
+
+    
+
+
+
+        
+        
+        
+        
+
+    
+        
+        
+        
+    
+        
+        
+        
+
+
+        
+        
+        
+    
+
+        
+
+
+
+
+    
+    
+
+        
+    
+        
+
+    
+
+
+
+
+
+
+        
+        
+        
+
+        
+        
+
+
+
+    
+
+    
+        
+        
+    
+
+
+    
+
+        
+        
+
+
+
+    
+    
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+    
+    
+
+
+
 
 
     
@@ -222,6 +557,54 @@ ul, ol {
 
     
 
+    
+        
+
+
+    
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
 
 
 
@@ -236,15 +619,6 @@ ul, ol {
     
 
     
-/* 800px = tablette portrait 
-@media screen and (max-width:800px) {
-    .cover_flux {
-
-    }
-    
-}
- */   
-
 
     
 

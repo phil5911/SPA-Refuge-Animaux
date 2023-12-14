@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPA</title>
+    <title>SPA-aucune raison ne justifie l'abandon</title>
     <!--Start : import google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,99 +18,198 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">  
     
-    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/style.css" media="screen"> 
+    <link rel="shortcut icon" href="https://www.la-spa.fr/app/assets-spa/uploads/2021/09/MicrosoftTeams-image-63.png.webp" type="image/x-icon">
 </head>
 <body> 
     
     <!--Start header : Le menu de ma page-->
     <header class="header">
-        <div class="header_left">
-        <img class="logo" src="https://www.la-spa.fr/app/assets-spa/uploads/2021/09/MicrosoftTeams-image-63.png.webp" alt="Logo de SPA">
-        <img class="menu" src="image\menu-fill.svg" alt="Menu de SPA ">
-        </div>
+        <div  class="header__container">
+            <img class="header__logo" 
+            src="https://www.la-spa.fr/app/assets-spa/uploads/2021/09/MicrosoftTeams-image-63.png.webp" 
+            alt="Logo de SPA" />
+            <img class="header__menu" 
+            src="image\menu-fill.svg" 
+            alt="Menu de SPA " />
         <nav>
-            <div class="header_list">
-                <ul class="list_links">
-                    <li>
-                        <a href="https://www.la-spa.fr" target="_self">
-                        </a>
-                        <img class="icon-don" src="image\don.svg" alt="Don la SPA">
-                        <span>Compagnon SPA</span>
-                    </li>
-                    <li>
-                        <a href="https://www.la-spa.fr" target="_blank">
-                        </a>
-                        <img class="icon-adoption" src="image\adoption.svg" alt="Adoption la SPA">
-                        <span>J'adopte</span>
-                    </li>
-                    <li>
-                        <a href="https://www.la-spa.fr" target="_blank">
-                        </a>
-                        <img class="icon-maltraitance" src="image\maltraitance.svg" alt="Maltraitance la SPA">
-                        <span>Je signale</span>
-                    </li>
-                    <li>
-                        <a href="https://www.la-spa.fr" target="_blank">
-                        </a>
-                        <span>Accès rapide</span>
-                        <img class="icon-check" src="image\arrow-down-s-line.svg" alt="Check">
-                    </li>
-                    <li>
-                        <a href="https://www.la-spa.fr" target="_blank">
-                        </a>
-                        <span>Mon espace</span>
-                        <img class="icon-user" src="image\user-3-fill.svg" alt="User">
-                    </li> 
-                    <li>
-                        <a href="https://www.la-spa.fr" target="_blank">
-                        </a>
-                        <img class="icon-map" src="image\map-pin-2-fill.svg" alt="map">
-                    </li>
-                    <li>
-                        <a href="https://www.la-spa.fr" target="_blank">
-                        </a>
-                        <img class="icon-coeur" src="image\icon-coeur.png" alt="Coeur">
-                    </li>
-                    <li>
-                        <a href="https://www.la-spa.fr" target="_blank">
-                        </a>
-                        <img class="icon-search" src="image\search-line.svg" alt="search">
-                    </li>
-                </ul>
-            </div>
+            <ul class="header__list-link">
+                <li class="header__link"> 
+                    <a href="https://www.la-spa.fr" target="_self">
+                    </a>
+                    <img class="header__icon" src="image\don.svg" alt="Don la SPA">
+                    <span>Compagnon SPA</span>
+                </li>
+                <li class="header__link">    
+                    <a href="https://www.la-spa.fr" target="_blank">
+                    </a>
+                    <img class="header__icon" src="image\adoption.svg" alt="Adoption la SPA">
+                    <span>J'adopte</span>
+                </li>
+                <li class="header__link">   
+                    <a href="https://www.la-spa.fr" target="_blank">
+                    </a>
+                    <img class="header__icon" src="image\maltraitance.svg" alt="Maltraitance la SPA">
+                    <span>Je signale</span>
+                </li>
+                <li class="header__link">  
+                    <a href="https://www.la-spa.fr" target="_blank">
+                    </a>
+                    <span>Accès rapide</span>
+                    <img class="header__icon" src="image\arrow-down-s-line.svg" alt="Check">
+                </li>
+                <li class="header__link">  
+                    <a href="https://www.la-spa.fr" target="_blank">
+                    </a>
+                    <span>Mon espace</span>
+                    <img class="header__icon" src="image\user-3-fill.svg" alt="User">
+                </li> 
+                <li class="header__link">   
+                    <a href="https://www.la-spa.fr" target="_blank">
+                    </a>
+                    <img class="header__icon" src="image\map-pin-2-fill.svg" alt="map">
+                </li>
+                <li class="header__link">  
+                    <a href="https://www.la-spa.fr" target="_blank">
+                    </a>
+                    <img class="header__icon" src="image\icon-coeur.png" alt="Coeur">
+                </li>
+                <li class="header__link">  
+                    <a href="https://www.la-spa.fr" target="_blank">
+                    </a>
+                    <img class="header__icon" src="image\search-line.svg" alt="search">
+                </li>
+            </ul>
         </nav>
-    </header>
-            
-    <!--END header : Le menu de ma page-->
+    </div>
+</header>
+<!--END header : Le menu de ma page-->
+        
+<!--Start : first section-->
+<section class="banniere">
+    <img class="banniere__image" src="image\volume-up-line.svg" alt="alerte abandons"/>
+    <h1 class="banniere__title">Alerte abandons:nos refuges sont saturé. Aidez-nous à sauver les animaux!</h1>
+</section>
+<!--End : first section-->
+        
+<!--Start : second section-->
+<main>
+<section class="cover">
+    <div class="cover__container-image">
+        <img class="cover__image" src="image\chat-persan.jpg" alt="image de fond chat persan">
+    </div>
+    <div class="cover__container-texts">
+        <h1 class="cover__title">aucune raison ne justifie l'abandon</h1>
+        <p class="cover__introduction">Decouvrez notre nouveau film de sensibilisation, inspiré <br> des raisons les plus absurdes entendues en refuge pour <br> justifier un abandon.</p>
+        <a href="" class="button button-white">Voir le film</a>
+        <a href="" class="button button-white">Je donne</a>
+        <a href="" class="button button-white">j'adopte</a>
+        </div>
+</section>
+</main>
+    
+<!--End : second Section-->
 
-    <!--Start : first section-->
-    <section class="banniere">
-        <img class="banniere_image" src="image\volume-up-line.svg" alt="alerte abandons"/>
-        <h1 class="banniere_title">Alerte abandons:nos refuges sont saturé. Aidez-nous à sauver les animaux!</h1>
-    </section>
-    <!--End : first section-->
-        
-    <!--Start : second section-->
-    <main>
-    <section class="cover">
-        <div class="cover_container-image">
-            <img class="cover_image" src="chat-persan.jpg" alt="image de fond chat persan">
-        </div>
-        <div class="cover_container-texts">
-            <h1 class="cover_title">aucune raison ne justifie l'abandon</h1>
-            <p class="cover_introduction">Découvrez notre nouveau film de sensibilisation, inspiré <br> des raisons les plus absurdes entendues en refuge pour <br> justifier un abandon.</p>
-            <a href="" class="button">Voir le film</a>
-            <a href="" class="button">Je donne</a>
-            <a href="" class="button">j'adopte</a>
-        </div>
-        
-    </section>
-    </main>
-        
-    <!--End : second Section-->
+<!--Start: third section-->
+<section class="adoption flux">
+<div class="bloc__adoption">
+    <div class="bloc__adoption__container-texts">
+    <h2 class="bloc__adoption-title">Les raisons de l'aimer</h2>
+    <p class="bloc__adoption-description">« Il est trop vieux », « Il n’est pas propre », « Il n’écoute rien <br> », « Il est moche »... Autant de propos absurdes entendus <br> en refuges qui pourraient presque faire sourire s'ils <br> n'étaient des raisons réellement invoquées pour <br> abandonner un animal. Ils ont inspiré notre nouveau film <br> de sensibilisation, qui montre avec tendresse et <br> beaucoup d'émotion que toutes les bêtises de nos <br> compagnons sont autant de souvenirs que l'on se <br> remémore avec nostalgie, surtout lorsqu'ils nous quittent <br> brutalement.</p>
+    <div class="bloc__adoption__container-link">
+    <a class="button__b button-orange" href="#">Voir le film</a>
+    </div>
+    </div>
+    <img class="bloc__adoption-image" src="image\campagne-abandon.jpg" alt="chien-abandon">              
+</div>
+<div class="bloc__adoption">
+    <div class="bloc__adoption__container-texts">
+    <h2 class="bloc__adoption-title">Cet été, offrez-leur un nouveau départ</h2>
+    <p class="bloc__adoption-description">Pour que tous les animaux en souffrance aient la vie <br> qu'ils méritent, rejoignez les Compagnons SPA. <br>
+    Soutenez-les en faisant un don par prélèvement <br> automatique et choisissez de les abonner à l'amour dès <br>maintenant.</p>
+    <div class="bloc__adoption__container-link">
+    <a class="button__b button-orange" href="#">Devenir Compagnon SPA</a>
+    </div>
+    </div>
+    <img class="bloc__adoption-image" src="image\compagnon-chien.png" alt="chien-abandon">
+</div>
+<div class="bloc__adoption">
+    <div class="bloc__adoption__container-texts">
+    <h2 class="bloc__adoption-title">Abonnez-les à l'amour</h2>
+    <p class="bloc__adoption-description">En rejoignant les Compagnons SPA, vous soutenez SPA par prélèvement automatique et choisissez d'abonner les animaux qui souffrent à l'amour. Ainsi, vous permettez à nos équipes d'organiser leurs actions dans la durée pour mieux prendre soin d'eux.</p>
+    <div class="bloc__adoption__container-link">
+    <a class="button__b button-orange" href="#">Devenir Compagnon SPA</a>   
+    </div>
+    </div>
+    <img class="bloc__adoption-image" src="image\chien-compagnon.jpg" alt="chien-abandon">
+</div>
+</section>
+<!--End : third section-->
+    
+<!--Start : fourth section-->
+<section class="hero">
+    <h2 class="hero__title">actuellement <br> 
+        <strong>4114 animaux</strong> à l’adoption</h2>
+        <form class="hero__search" action="" method="get">
+            <div class="hero__field"> 
+                <label class="hero__label" for="search-adoption"
+                >Que recherchez-vous ? (obligatoire)</label>
+                <input 
+                class="hero__input"
+                id="search-adoption"
+                name="adoption"
+                type="text"
+                value=""
+                placeholder="Rechercher un(e) chat"
+                required
+                />
+                <label class="hero__field">
+                    <span class="hero__label">Où ?</span>
+                    <input 
+                    class="hero__input"
+                    type="text"
+                    name="city"
+                    value=""
+                    placeholder="Adresse, ville..."
+                    />
+                </label>
+                <button class="buton button--orange" type="submit">Rechercher</button>
+            </div>       
+        </form>   
+</section>
+<!--End : fourth section-->
 </body>
 </html>
+                    
+                
+    
         
+                    
+                        
+
+                        
+                    
+            
+                
+                
+        
+
+    
+
+
+
+
+    
+
+    
+        
+    
+    
+    
+    
+            
+            
+
         
         
         
@@ -125,6 +224,9 @@
         
             
             
+        
+        
+        
             
             
             
@@ -146,6 +248,7 @@
         
     
             
+                
             
             
             
